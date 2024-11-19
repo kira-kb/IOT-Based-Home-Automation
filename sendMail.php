@@ -25,14 +25,8 @@ function sendMail($email, $subject, $message, $altMessage)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; //Enable implicit TLS encryption
         $mail->Host = 'smtp.gmail.com'; //Set the SMTP server to send through
         $mail->Port = 587; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-        $mail->Username = 'kirubelbewket@gmail.com'; //SMTP username
-        $mail->Password = 'jiku jxqa hnyx apkg'; //SMTP password
-
-        // #fff using MAIL SANDBOX
-        // $mail->Host = 'sandbox.smtp.mailtrap.io';
-        // $mail->Port = 2525;
-        // $mail->Username = '2c324278681842';
-        // $mail->Password = '8f4ac586a8537c';
+        $mail->Username = 'your-email address'; //SMTP username
+        $mail->Password = 'your-email password'; //SMTP password
 
         //Recipients
         $mail->setFrom('noReplay@SMARTIZER.team', 'SMARITZER');
